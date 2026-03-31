@@ -40,7 +40,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
   const message = document.getElementById("message").value;
 
   try {
-    const res = await fetch('https://portfolio-backend-yojd.onrender.com//send-email', {
+    const res = await fetch('https://portfolio-backend-yojd.onrender.com/send-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, message })
